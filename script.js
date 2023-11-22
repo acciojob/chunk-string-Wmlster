@@ -1,4 +1,4 @@
-function stringChop(s, size) {       
+function stringChop(s, size) {        
   // your code here
 
 	let n=s.length;
@@ -9,8 +9,13 @@ function stringChop(s, size) {
 
 	if(n<=0)
 	{
-		v.push(s1);
+		//v.push(s1);
 		return v;
+	}
+	
+	if(size<=0)
+	{
+	    return v;
 	}
 
 	let count=0;
@@ -39,4 +44,4 @@ function stringChop(s, size) {
 // Do not change the code below
 const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+console.log(stringChop(str, size));
