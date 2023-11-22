@@ -3,6 +3,9 @@ function stringChop(s, size) {
 
 	let n=s.length;
 
+	size=parseInt(size);
+ 
+
 	let v=[];
 
 	if(s===null)
@@ -12,7 +15,7 @@ function stringChop(s, size) {
 	
 
 
-	for(let i=0;i<n;i+=size) 
+	for(let i=0;i<n;i+=size)  
 		{
 			let n1=i+size;
 
@@ -21,7 +24,7 @@ function stringChop(s, size) {
 				n1=n;
 			}
 
-			let s1=s.slice(i,n1);
+			let s1=s.substring(i,n1);
 			
 			v.push(s1);
 		}
