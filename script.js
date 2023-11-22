@@ -7,17 +7,11 @@ function stringChop(s, size) {
 
 	let s1="";
 
-	if(n<=0)
+	if(n===null)
 	{
-		//v.push(s1);
 		return v;
 	}
 	
-	if(size<=0)
-	{
-	    return v;
-	}
-
 	let count=0;
 
 	for(let i=0;i<n;i++)
