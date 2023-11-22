@@ -10,7 +10,7 @@ function stringChop(s, size) {
 
 	if(s===null)
 	{
-		return v[null];
+		return v[""];
 	}
 
 
