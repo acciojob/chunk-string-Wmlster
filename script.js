@@ -4,7 +4,7 @@ function stringChop(s, size) {
 	let n=s.length;
 
 	if(n==0)
-		return s;
+		return null;
 
 	let count=0;
 
