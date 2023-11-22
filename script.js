@@ -10,9 +10,8 @@ function stringChop(s, size) {
 
 	if(s===null)
 	{
-		return v;
+		return v[null];
 	}
-	
 
 
 	for(let i=0;i<n;i+=size)  
