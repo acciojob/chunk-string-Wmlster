@@ -7,7 +7,7 @@ function stringChop(s, size) {
 
 	let s1="";
 
-	if(n===null)
+	if(s===null)
 	{
 		return v;
 	}
