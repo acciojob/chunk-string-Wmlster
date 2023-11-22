@@ -1,41 +1,34 @@
-function stringChop(s, size) {        
+function stringChop(s, size) {          
   // your code here
 
 	let n=s.length;
 
 	let v=[];
 
-	let s1="";
-
 	if(s===null)
 	{
 		return v;
 	}
 	
-	let count=0;
 
-	for(let i=0;i<n;i++)
+
+	for(let i=0;i<n;i+=size) 
 		{
-			s1+=s[i];
-			++count;
+			let n1=i+size;
 
-			if(count==size)
+			if(n1>=n)
 			{
-				v.push(s1);
-				s1="";
-				count=0;
+				n1=n;
 			}
+
+			v.push(s.slice(i,n1));
 		}
 
-	if(count!=0)
-	{
-		v.push(s1);
-	}
 
 	return v;
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-console.log(stringChop(str, size));
+/const str = prompt("Enter String.");
+c/onst size = prompt("Enter Chunk Size.");
+alert(stringChop(str, size));
