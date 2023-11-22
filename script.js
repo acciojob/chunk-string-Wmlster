@@ -1,17 +1,18 @@
-function stringChop(s, size) {       
+function stringChop(s, size) {          
   // your code here
 
 	let n=s.length;
 
-	size=parseInt(size);
-
-
-	if(n==0)
-		return [];
-
 	let v=[];
 
-		for(let i=0;i<n;i+=(size))  
+	if(n==0)
+	{
+		return v;
+	}
+	
+size=parseInt(size);
+
+	for(let i=0;i<n;i+=(size))  
 		{
 			let n1=i+(size);
 
@@ -20,17 +21,17 @@ function stringChop(s, size) {
 				n1=n;
 			}
 
-//console.log(i+"  "+n1);
-
 			let s1=s.substring((i),(n1));
 			
 			v.push(s1);
 		}
 
+
 	return v;
 }
 
 // Do not change the code below
-c/onst str = prompt("Enter String.");
-co/nst size = prompt("Enter Chunk Size.");
+const str = prompt("Enter String.");
+const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
+
