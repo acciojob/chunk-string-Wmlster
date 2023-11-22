@@ -1,10 +1,10 @@
-function stringChop(s, size) {    
+function stringChop(s, size) {     
   // your code here
 
 	let n=s.length;
 
 	if(n==0)
-		return null;
+		return [];
 
 	let count=0;
 
