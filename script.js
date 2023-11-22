@@ -21,14 +21,16 @@ function stringChop(s, size) {
 				n1=n;
 			}
 
-			v.push(s.slice(i,n1));
+			let s1=s.slice(i,n1);
+			
+			v.push(s1);
 		}
 
 
-	return v;
+	return v 
 }
 
 // Do not change the code below
-/const str = prompt("Enter String.");
-c/onst size = prompt("Enter Chunk Size.");
+const str = prompt("Enter String.");
+const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
