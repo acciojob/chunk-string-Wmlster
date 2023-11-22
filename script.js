@@ -9,8 +9,6 @@ function stringChop(s, size) {
 	if(n==0)
 		return [];
 
-	let count=0;
-
 	let v=[];
 
 		for(let i=0;i<n;i+=(size))  
