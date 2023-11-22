@@ -3,14 +3,17 @@ function stringChop(s, size) {
 
 	let n=s.length;
 
-	if(n<=0)
-		return [];
-
-	let count=0;
-
 	let v=[];
 
 	let s1="";
+
+	if(n<=0)
+	{
+		v.push(s1);
+		return v;
+	}
+
+	let count=0;
 
 	for(let i=0;i<n;i++)
 		{
